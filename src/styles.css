@@ -84,7 +84,7 @@ body {
     position: relative;
     z-index: 1;
     background-color: var(--shadow-dark);
-    margin-top: 340px;
+    margin-top: 320px;
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
@@ -121,7 +121,7 @@ body {
 .info-block-label span {
     position: relative;
     color: var(--white);
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .info-block-value {
