@@ -35,6 +35,8 @@ body {
     height: 90vh;
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark);
+    
+    
 }
 
 .upper-data {
@@ -59,9 +61,7 @@ body {
 .weather-data {
     position: relative;
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    /* background-color: var(--shadow-dark); ESTO VA PARA EL LOW*/ 
+    /* background-color: var(--shadow-dark); VA EN EL DE ABAJO*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +77,61 @@ body {
 .temperature {
     color: var(--white);
     font-size: 4em;
-    text-align: center;
-    
+    text-align: center;   
+}
+
+.more-info-label {
+    color: var(--white);
+}
+
+.more-info-container {
+    position: relative;
+    z-index: 1;
+    /* background-color: var(--shadow-dark); VA EN EL DE ABAJO*/
+    margin-top: 100px;
+    padding: 10px;
+    flex:1;
+    background-color: var(--shadow-light);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info-block {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block-label {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: colum;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block-label img {
+    position: relative;
+    margin-right: 5px;
+    width: 1em;
+}
+
+.info-block-label span {
+    position: relative;
+    color: var(--white);
+    font-size: 0.8 em;
+}
+
+.info-block-value {
+    position: relative;
+    width: 50%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white);
+    margin-left: 295px;
 }
