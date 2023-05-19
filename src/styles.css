@@ -1,5 +1,5 @@
 :root {
-    --blue-1: #0077b6; 
+    --blue-1: #483855; 
     --blue-2: #0096c7;
     --orange-1: #F58F29;
     --white: #fff;
@@ -8,6 +8,10 @@
     --shadow-light: rgba(255,255,255,0.1);
 }
 
+@font-face {
+    font-family: WeatherFont;
+    src: url(assets/Quicksand-VariableFont_wght.ttf);
+}
 
 * {
     margin: 0;
@@ -16,7 +20,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: WeatherFont;
     font-size: 16px;
     width: 100%;
     height: 100vh;
@@ -29,7 +33,6 @@ body {
 .container {
     width: 400px;
     height: 90vh;
-    background-color: var(--blue-2);
     border-radius: 20px;
     box-shadow: 10px 10px 10px var(--shadow-dark);
 }
@@ -38,11 +41,11 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 50%;
+    height: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    border-radius: 20px;
 }
-
 .upper-data img{
     position: absolute;
     top: 0;
@@ -50,4 +53,30 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px;
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--shadow-dark); ESTO VA PARA EL LOW*/ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.location {
+    color: var(--white);
+    text-align:center;
+    font-size: 1.2em;
+}
+
+.temperature {
+    color: var(--white);
+    font-size: 4em;
+    text-align: center;
+    
 }
